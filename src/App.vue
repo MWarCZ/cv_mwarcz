@@ -65,6 +65,37 @@
           isLast
         />
       </section>
+      <section>
+        <h2>Jazykové dovednosti</h2>
+        <SemiTable title="Angličtina" :items="[
+            { head: 'Čtení', body: 'B1' },
+            { head: 'Poslech', body: 'B1' },
+            { head: 'Mluvení (diskuze)', body: 'A2' },
+            { head: 'Mluvení (projev)', body: 'A2' },
+            { head: 'Psaní', body: 'B1' },
+          ]"
+        />
+      </section>
+      <section>
+        <h2>Znalosti a dovednosti</h2>
+        <SemiTable title="IT" :items="[
+            { head: 'JavaScript' },
+            { head: 'TypeScript' },
+            { head: 'Vue.js' },
+            { head: 'Node.js' },
+            { head: 'Git' },
+            { head: 'SASS' },
+            { head: 'NGINX' },
+            { body: 'GraphQL' },
+            { body: 'Docker' },
+            { body: 'Svelte.js' },
+            { body: 'MySQL' },
+            { body: 'LESS' },
+            { body: 'Oracle PL/SQL' },
+            { body: 'MongoDB' },
+          ]"
+        />
+      </section>
     </div>
 
   </div>
@@ -74,6 +105,7 @@
 import Avatar from '@/components/Avatar.vue'
 import Card from '@/components/Card.vue'
 import Contact from '@/components/Contact.vue'
+import SemiTable from '@/components/SemiTable.vue'
 
 export default {
   name: 'App',
@@ -81,6 +113,7 @@ export default {
     Avatar,
     Card,
     Contact,
+    SemiTable,
   },
 }
 </script>
